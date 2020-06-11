@@ -86,8 +86,6 @@ public class Course implements Serializable{
      * Methods
      */
 
-    
-    //Compares two Course objects and return a boolean with the answer
     @Override
     public boolean equals( Object object ){
         if( !(object instanceof Course) ) return false;
