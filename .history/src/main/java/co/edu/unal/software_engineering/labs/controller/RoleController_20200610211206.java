@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class RoleControllr{
+public class RoleController{
 
     private RoleService roleService;
 
@@ -18,8 +18,8 @@ public class RoleControllr{
     }
 
 
-    // @GetMapping( value = { "/roles" } )
-    // public List<Role> getAllRoles( ){
-    //     return roleService.getAll( );
-    // }
+    @GetMapping( value = { "/roles" } )
+    public List<Role> getAllRoles( ){
+        return roleService.getAll( );
+    }
 }
